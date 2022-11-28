@@ -31,7 +31,6 @@ class _HomeScreenState extends State<HomeScreen> {
           }
           final docs = snapshot.data!.docs;
           return ListView.builder(
-            reverse: true,
             itemCount: docs.length,
             itemBuilder: (ctx, index) =>
                 FormCard(
